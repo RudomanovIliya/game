@@ -204,6 +204,7 @@ default ScqHis11 = -1
 default ScqInf5 = -1
 default ScqInf9 = -1
 
+
 $ ind = 0
 
 define variant_prefixes = (_('a'), _('b'), _('c'), _('d'))
@@ -416,16 +417,16 @@ label test_complete:
         $ ScqRus11 = score
 
     if ind == 30:
-        $ ScqHis1 = score
-    if ind == 31:
         $ ScqHis5 = score
-    if ind == 32:
+    if ind == 31:
         $ ScqHis9 = score
+    if ind == 32:
+        $ ScqHis11 = score
 
     if ind == 40:
         $ ScqInf5 = score
     if ind == 41:
-        $ ScqInf5 = score
+        $ ScqInf9 = score
 
     $ ind = 0
     jump menu_choise
